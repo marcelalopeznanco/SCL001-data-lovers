@@ -56,12 +56,20 @@ nav li li {
     max-height: 0;
     overflow: hidden;
     transition: all .6s;
-    width: 150px;
+    width: 200px;
 }
 
-nav li:hover li {
-    max-height: 500px;
+nav li:hover>ul>li {
+    max-height: 1000px;
     overflow: visible;
+}
+
+
+/* TERCER NIVEL */
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
 }
 
 btnCharacter {
@@ -74,7 +82,7 @@ btnCharacter {
     border: none;
 }
 
-.btnMale {
+btnMale {
     width: 15%;
     height: 30px;
     color: aqua;
@@ -84,7 +92,7 @@ btnCharacter {
     border: none;
 }
 
-.btnFemale {
+btnFemale {
     width: 15%;
     height: 30px;
     color: aqua;
@@ -94,7 +102,7 @@ btnCharacter {
     border: none;
 }
 
-.btnAz {
+btnAz {
     width: 15%;
     height: 30px;
     color: aqua;
