@@ -34,38 +34,3 @@ window.rickandmorty = {
         return ResultOrderAz;
     }
 };
-
-/* const sortRickandmortys = (rickandmorty, sortBy) => {
-
-    if (sortBy == 'a-z') {
-
-        return rickandmorty.sort((a, b) => {
-            if (a.name > b.name) {
-                return 1;
-            }
-            if (a.name < b.name) {
-                return -1;
-            }
-            return 0;
-        });
-    }
-};
- */
-/* orderRickandmorty : (rickandmorty) => {
-        rickandmorty.sort((nameone, nametwo) => nameone.name.localeCompare(nametwo.name));
-
-        return rickandmorty;
-
-    },
-    */
-/*  
-window.data = {
-    //filtrar por tipo
-    filterPokemons: (data, typeP) => {
-        const filterPokemon = data.filter(element => {
-            return element.type.includes(typeP)
-        });
-        return filterPokemon;
-    }
-
-};*/

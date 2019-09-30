@@ -60,33 +60,3 @@ btnOrderAz.addEventListener("click", () => {
     showRickandmorty(printOrderAz);
 
 });
-
-
-
-
-
-/*  document.getElementById("btnaz").addEventListener("click", () => {
-
-    const btnazP = document.getElementById("btnaz").value
-
-    let ver = sortRickandmortys(rickandmorty, btnazP)
-        //let printbtnazP = window.rickandmorty.orderRickandmorty(rickandmorty, btnazP);
-    document.getElementById("root").innerHTML = " ";
-    showRickandmorty(sortRickandmortys);
-});
-
-*/
-
-/*
-window.data = {
-    //filtrar por tipo
-    filterPokemons: (data, typeP) => {
-        const filterPokemon = data.filter(element => {
-            return element.type.includes(typeP)
-        });
-        return filterPokemon;
-    }
-
-} ;
-*/
-//let printTypeP = window.data.filterPokemons(data, typeP);
