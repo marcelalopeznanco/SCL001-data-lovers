@@ -3,6 +3,7 @@ const rickandmorty = window.RICKANDMORTY.results;
 const containerRoot = document.getElementById("root");
 const btnCharacter = document.getElementById("btncharacter");
 
+
 //Funcion que recorre la data
 function showRickandmorty(rickandmorty) {
     for (let i = 0; i < rickandmorty.length; i++) {
@@ -76,21 +77,21 @@ btnUnknown.addEventListener("click", () => {
 
 //orden personajes alfabeticamente A-Z
 const btnOrderAz = document.getElementById("btnaz");
+
 btnOrderAz.addEventListener("click", () => {
-    let OrderAz = document.getElementById("btnaz").value;
-    let printOrderAz = window.rickandmorty.orderAz(rickandmorty, OrderAz);
     document.getElementById("root").innerHTML = " ";
+    let orderAzp = document.getElementById("btnaz").value;
+    let printOrderAz = window.rickandmorty.orderAz(rickandmorty, orderAzp);
     showRickandmorty(printOrderAz);
 
 });
 
-/*  
+//orden personajes alfabeticamente Z-A
 const btnOrderZa = document.getElementById("btnza");
 btnOrderZa.addEventListener("click", () => {
     let OrderZa = document.getElementById("btnza").value;
-    let printOrderZa = window.rickandmorty.orderZa(rickandmorty, OrderZa);
+    let printOrderZa = window.rickandmorty.orderAz(rickandmorty, OrderZa);
     document.getElementById("root").innerHTML = " ";
     showRickandmorty(printOrderZa);
 
-});`
-*/
+});

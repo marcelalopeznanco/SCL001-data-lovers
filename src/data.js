@@ -49,19 +49,19 @@ window.rickandmorty = {
     },
 
 
-    //Funcion que recorre la data y la ordena de la A a la Z
+    //Funcion que recorre la data y la ordena de la A a la Z y si no devuelve de la Z a la A
     orderAz: (rickandmorty, btnaz) => {
-        let ResultOrderAz = "";
-        if (btnaz === "Az") {
-            ResultOrderAz = rickandmorty.sort((a, b) => {
+        let resultOrderAz = " ";
+        if (btnaz === "az") {
+            resultOrderAz = rickandmorty.sort((a, b) => {
                 return a.name.localeCompare(b.name);
             })
 
-            /*   } else if (btnaz === "Za") {
-                  ResultOrderZa = rickandmorty.sort((a, b) => {
-                      return b.name.localeCompare(a.name);
-                  }) */
-        };
-        return ResultOrderAz;
+        } else if (btnaz === "za") {
+            resultOrderAz = rickandmorty.sort((a, b) => {
+                return b.name.localeCompare(a.name)
+            })
+        }
+        return resultOrderAz;
     }
 };
