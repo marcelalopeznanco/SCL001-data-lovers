@@ -63,5 +63,15 @@ window.rickandmorty = {
             })
         }
         return resultOrderAz;
+    },
+
+    //Funcion calcular
+    gender: (rickandmorty, gender) => {
+        const genderuno = parseFloat(rickandmorty.lenght);
+        const genderdos = window.filter.gender(rickandmorty, gender).lenght;
+        const gendertres = parseFloat((genderdos * 100) / genderuno);
+        return gendertres;
+
     }
+
 };

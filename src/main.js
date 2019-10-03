@@ -15,7 +15,7 @@ function showRickandmorty(rickandmorty) {
                 <img src="${rickandmorty[i].image}">
             </div>
             <div class="Cards-body"
-            <h2>${rickandmorty[i].name}</h2>
+            <h1>${rickandmorty[i].name}</h1>
             </div>
         </div>
         </div>
@@ -95,3 +95,14 @@ btnOrderZa.addEventListener("click", () => {
     showRickandmorty(printOrderZa);
 
 });
+
+
+/* const btnCalculos = document.getElementById("calculos");
+
+btnCalculos.addEventListener("click", () => {
+    let calculosP = document.getElementById("calculos").value;
+    let printcalculosP = window.rickandmorty.gender(rickandmorty, calculosP);
+    document.getElementById("root").innerHTML = " ";
+    showRickandmorty(printcalculosP);
+
+}); */

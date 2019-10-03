@@ -1,5 +1,5 @@
     body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Roboto', sans-serif;
         background-image: url("https://github.com/marcelalopeznanco/imagenes-rick/blob/master/2.jpg?raw=true");
         background-attachment: fixed;
         background-size: cover;
@@ -100,42 +100,42 @@
         text-decoration: none;
     }
     
-    btnCharacter {
-        width: 15%;
-        height: 30px;
-        color: aqua;
-        background-color: black;
-        margin-top: 10%;
-        margin-left: 30%;
-        border: none;
+    .container-fluid {
+        display: flex;
+        flex-direction: row;
+        align-content: flex-end;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+        padding-top: 10%;
+        width: 100%;
     }
     
-    btnMale {
-        width: 15%;
-        height: 30px;
-        color: aqua;
-        background-color: black;
-        margin-top: 10%;
-        margin-left: 2%;
-        border: none;
+    img {
+        width: 100%;
     }
     
-    btnFemale {
-        width: 15%;
-        height: 30px;
-        color: aqua;
-        background-color: black;
-        margin-top: 10%;
-        margin-left: 2%;
-        border: none;
+    .Cards {
+        margin: 1em;
+        padding: 10%;
+        background: rgba(3, 3, 3, 0.568);
+        border-radius: 50px;
+        text-align: center;
+        align-content: flex-start;
+        align-content: center;
     }
     
-    btnAz {
-        width: 15%;
-        height: 30px;
-        color: aqua;
-        background-color: black;
-        margin-top: 10%;
-        margin-left: 2%;
-        border: none;
+    .Cards-body {
+        text-align: center;
+        padding: 20px;
+        color: #fdfd99;
+        font-size: 20px;
+        font-weight: bolder;
+        align-content: center;
+    }
+    
+    .footer {
+        color: white;
+        text-align: center;
+        padding-block-start: 25%;
     }
